@@ -50,7 +50,7 @@ cd backend
 mvn spring-boot:run
 ```
 
-Use `COOKIE_SECURE=false` for local HTTP development, and `COOKIE_SECURE=true` behind HTTPS. Secure cookies are not sent over HTTP. `JWT_SECRET` must be Base64 and decode to at least 32 bytes. Optional `SERVER_PORT`, `JWT_EXPIRATION_MS` (default 3600000), and `DB_POOL_SIZE` can tune the service. In production, use a managed secrets mechanism, HTTPS, and the exact frontend origin.
+Use `COOKIE_SECURE=false` and `COOKIE_SAME_SITE=Lax` for local HTTP development. For the separate Vercel frontend and Render backend, use `COOKIE_SECURE=true` and `COOKIE_SAME_SITE=None`; cross-site authenticated requests require `SameSite=None`, and `SameSite=None` requires HTTPS. `JWT_SECRET` must be Base64 and decode to at least 32 bytes. Optional `SERVER_PORT`, `JWT_EXPIRATION_MS` (default 3600000), and `DB_POOL_SIZE` can tune the service. In production, use a managed secrets mechanism, HTTPS, and the exact frontend origin without a trailing slash.
 
 ## Verify
 
