@@ -4,7 +4,7 @@ import { ThemeContext } from './context.js'
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     try {
-      return window.localStorage.getItem('portfolio-pro-theme') || 'dark'
+      return window.localStorage.getItem('tradesphere-pro-theme') || 'dark'
     } catch {
       return 'dark'
     }
@@ -13,7 +13,7 @@ export function ThemeProvider({ children }) {
   useEffect(() => {
     document.documentElement.dataset.theme = theme
     try {
-      window.localStorage.setItem('portfolio-pro-theme', theme)
+      window.localStorage.setItem('tradesphere-pro-theme', theme)
     } catch {
       return undefined
     }

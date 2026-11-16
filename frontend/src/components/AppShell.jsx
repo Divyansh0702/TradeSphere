@@ -50,7 +50,7 @@ export default function AppShell() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const currentTitle = location.pathname.startsWith('/stocks/')
     ? 'Stock details'
-    : titleByPath[location.pathname] || 'PortfolioPro'
+    : titleByPath[location.pathname] || 'TradeSphere'
 
   async function handleLogout() {
     try {
@@ -95,7 +95,7 @@ export default function AppShell() {
           <button type="button" className="mobile-menu-button" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label={mobileMenuOpen ? 'Close navigation' : 'Open navigation'}>
             {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
-          <div className="topbar-title"><span>PORTFOLIOPRO</span><strong>{currentTitle}</strong></div>
+          <div className="topbar-title"><span>TRADESPEHERE</span><strong>{currentTitle}</strong></div>
           <div className="topbar-actions">
             <NavLink to="/market" className="topbar-search"><Search size={16} /><span>Find a stock</span><kbd>/</kbd></NavLink>
             <ThemeToggle />

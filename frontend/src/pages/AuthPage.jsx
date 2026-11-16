@@ -56,13 +56,13 @@ export default function AuthPage({ mode }) {
               {!isSubmitting && <span aria-hidden="true">{isRegister ? '→' : '↗'}</span>}
             </button>
           </form>
-          <p className="auth-switch">{isRegister ? 'Already have an account?' : 'New to PortfolioPro?'}<Link to={isRegister ? '/login' : '/register'}>{isRegister ? 'Sign in' : 'Create an account'}</Link></p>
+          <p className="auth-switch">{isRegister ? 'Already have an account?' : 'New to TradeSphere?'}<Link to={isRegister ? '/login' : '/register'}>{isRegister ? 'Sign in' : 'Create an account'}</Link></p>
         </div>
         <p className="auth-footnote">Virtual INR balances only · No real-money trading</p>
       </section>
       <aside className="auth-aside">
         <div className="auth-aside-mark"><Activity size={21} /></div>
-        <span className="section-kicker">PORTFOLIOPRO SIMULATED MARKETS</span>
+        <span className="section-kicker">TRADESPEHERE SIMULATED MARKETS</span>
         <h2>Trade ideas.<br /><span>Not real money.</span></h2>
         <p>Explore a curated NSE stock universe, test decisions with virtual INR, and review every execution in your own portfolio.</p>
         <div className="auth-aside-lines" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /><i /><i /><i /><i /></div>
