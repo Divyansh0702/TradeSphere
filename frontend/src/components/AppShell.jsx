@@ -36,9 +36,9 @@ const titleByPath = {
 
 function Brand() {
   return (
-    <NavLink className="app-brand" to="/dashboard" aria-label="PortfolioPro overview">
+    <NavLink className="app-brand" to="/dashboard" aria-label="TradeSphere overview">
       <span className="app-brand-mark"><Command size={17} strokeWidth={2.2} /></span>
-      <span>Portfolio<span>Pro</span></span>
+      <span>TradeSphere<span>Pro</span></span>
     </NavLink>
   )
 }
