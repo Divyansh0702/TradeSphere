@@ -5,7 +5,7 @@ import { useAuth } from '../auth/useAuth.js'
 import ThemeToggle from '../components/ThemeToggle.jsx'
 
 function Brand() {
-  return <Link className="auth-brand" to="/login"><span className="app-brand-mark"><Command size={17} /></span><span>Portfolio<span>Pro</span></span></Link>
+  return <Link className="auth-brand" to="/login"><span className="app-brand-mark"><Command size={17} /></span><span>TradeSphere</span></Link>
 }
 
 export default function AuthPage({ mode }) {
